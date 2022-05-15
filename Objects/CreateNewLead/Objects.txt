@@ -1,0 +1,2 @@
+*** Variables ***
+${lead_status_drop_down_obj}    //*[@id="combobox-button-208"]

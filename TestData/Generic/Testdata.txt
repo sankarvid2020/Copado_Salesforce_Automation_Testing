@@ -1,0 +1,5 @@
+*** Variables ***
+${BROWSER}       Chrome
+${ROBOT_ENDPOINT}	https://tcs-34b.my.salesforce.com/
+${USERNAME}       sankarvid2020-j5gy@force.com
+${PASSWORD}       Salesforce@1987
