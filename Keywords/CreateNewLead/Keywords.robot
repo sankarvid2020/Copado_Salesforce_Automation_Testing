@@ -1,14 +1,6 @@
 *** Settings ***
-Library           String
-Library           Collections
-Library           DatabaseLibrary
-Library           RequestsLibrary
-Library           JSONLibrary
-Library           CSVLib
-Library           DateTime
 Library           QWeb
 Library           SeleniumLibrary
-Library           ../../Libraries/Generic/Library.py 
 Resource          ../../Objects/CreateNewLead/Objects.txt
 Resource          ../../Objects/Generic/Objects.txt
 Resource          ../../Keywords/Generic/Keywords.robot
@@ -27,7 +19,8 @@ New lead window is displayed
     
 User enters all required fields in new lead section
     [Arguments]    ${type_first_name}    ${type_last_name}    ${type_company}    ${type_email}
-    Select option    ${lead_status_drop_down_obj}    ${lead_status}          
+    Select option    ${lead_status_drop_down_obj}    ${lead_status}
+    Select option    ${salutation_drop_down_obj}    ${salutation}         
     TypeText                 First Name     ${type_first_name}
     TypeText                 Last Name      ${type_last_name}
     TypeText                 Company        ${type_company}

@@ -1,2 +1,3 @@
 *** Variables ***
-${lead_status_drop_down_obj}    //*[@id="combobox-button-208"]
+${lead_status_drop_down_obj}    //*[@aria-label='Lead Status, New']
+${salutation_drop_down_obj}    //*[@aria-label='Salutation, --None--']

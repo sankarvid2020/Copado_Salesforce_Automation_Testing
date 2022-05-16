@@ -1,5 +1,6 @@
 *** Variables ***
 ${lead_status}    Working
+${salutation}    Mr.
 ${first_name}    Sankar
 ${last_name}    Ashokkumar
 ${company}    Prodapt Consulting B.V

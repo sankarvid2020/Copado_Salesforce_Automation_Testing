@@ -2,7 +2,7 @@
 Resource          ../../Keywords/CreateNewLead/Keywords.robot
 Resource          ../../Keywords/Generic/Keywords.robot
 Suite Teardown    Qweb.Close Browser
-Test Teardown      Run Keyword If Test Failed    Get Browser Console Log Entries    GIP_IP_Blocks_Overview_${TEST NAME}.png
+Test Teardown      Run Keyword If Test Failed    Get Browser Console Log Entries    ${TEST NAME}.png
 Suite Setup             QWeb.Open Browser    about:blank    ${BROWSER}
 
 *** Test Cases ***
